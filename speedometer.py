@@ -29,10 +29,10 @@ Input: ary = [3,1,7] ; target = 4 ;         Output = [0,1]
 
 class Solution:
     def two_numbers(self, ary, target):
-        for int1 in ary:
-            for int2 in ary:
-                if int1+int2==target:
-                    return [int1, int2]
+        for ix, x in enumerate(ary):
+            for iy, y in enumerate(ary):
+                if x+y==target:
+                    return [ix, iy]
         pass
 
 def main():
