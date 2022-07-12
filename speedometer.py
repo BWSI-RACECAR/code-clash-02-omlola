@@ -31,7 +31,7 @@ class Solution:
     def two_numbers(self, ary, target):
         for ix, x in enumerate(ary):
             for iy, y in enumerate(ary):
-                if x+y==target:
+                if x+y==target and ix != iy:
                     return [ix, iy]
         pass
 
