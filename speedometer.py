@@ -33,7 +33,7 @@ class Solution:
             for iy, y in enumerate(ary):
                 if x+y==target and ix != iy:
                     return [ix, iy]
-        pass
+        return None
 
 def main():
     array = input().split(" ")
